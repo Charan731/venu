@@ -1,9 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <body>
-        hello world
-    </body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types of Universities</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background-color: #4a4e69;
+            color: white;
+            padding: 20px 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 20px;
+        }
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: inline-block;
+            width: 250px;
+            margin: 15px;
+            padding: 15px;
+            text-align: left;
+        }
+        .card h3 {
+            color: #4a4e69;
+        }
+        .card p {
+            color: #333;
+        }
+        .card button {
+            background-color: #9a8c98;
+            border: none;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .card button:hover {
+            background-color: #4a4e69;
+        }
+        footer {
+            background-color: #22223b;
+            color: white;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Types of Universities</h1>
+        <nav>
+            <ul>
+                <li><a href="#public">Public</a></li>
+                <li><a href="#private">Private</a></li>
+                <li><a href="#online">Online</a></li>
+                <li><a href="#community">Community</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="public">
+        <div class="card">
+            <h3>Public Universities</h3>
+            <p>Public universities are funded by the government and usually offer lower tuition fees.</p>
+            <button onclick="showMore('public')">Learn More</button>
+        </div>
+    </section>
+
+    <section id="private">
+        <div class="card">
+            <h3>Private Universities</h3>
+            <p>Private universities are funded by private organizations and tend to be more expensive.</p>
+            <button onclick="showMore('private')">Learn More</button>
+        </div>
+    </section>
+
+    <section id="online">
+        <div class="card">
+            <h3>Online Universities</h3>
+            <p>Online universities offer flexible learning options through virtual platforms.</p>
+            <button onclick="showMore('online')">Learn More</button>
+        </div>
+    </section>
+
+    <section id="community">
+        <div class="card">
+            <h3>Community Colleges</h3>
+            <p>Community colleges provide two-year degrees and vocational training programs.</p>
+            <button onclick="showMore('community')">Learn More</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Types of Universities. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showMore(type) {
+            let info = {
+                'public': 'Public universities are often larger and have a diverse range of programs and research opportunities.',
+                'private': 'Private universities may offer smaller class sizes and specialized programs.',
+                'online': 'Online universities provide flexible scheduling and remote access to educational resources.',
+                'community': 'Community colleges are a cost-effective way to earn credits that can be transferred to a four-year university.'
+            };
+            alert(info[type]);
+        }
+    </script>
 
 </body>
 </html>
